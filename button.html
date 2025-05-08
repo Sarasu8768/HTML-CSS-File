@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Product</a>
-        <a href="">Services</a>
-        <a href="">Contant</a>
-        <span></span>
-    </nav>
-</head>
-<body>
-        body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: black;
+    <title>Buttons</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    header{
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 50px;
     }
+        
     nav{
         position: relative;
         width: 475px;
@@ -40,6 +39,22 @@
         text-decoration: none;
         padding: 0 23px;
         z-index: 1;
+    }
+    main{
+        height: 500px;
+        text-decoration: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        background-color: skyblue;
+        margin-bottom: 10px;
+    }
+    footer{
+        background-color: #666;
+        color: #f6f6f6;
+        text-align: center;
+        padding: 10px;
     }
     nav span{
         position: absolute;
@@ -66,5 +81,29 @@
     nav a:nth-child(5):hover~span{
         left: 380px;
     }
+</style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>This is header</h1>
+    </header>
+    <!--navigation-->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <!--main-->
+    <main>
+        <h2>Welcome to my website</h2>
+        <p>This is the body section.</p>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>Copyright &copy;2024</p>
+    </footer>
 </body>
 </html>
+
+       
